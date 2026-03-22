@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ref. Cores: https://coolors.co/palettes/trending */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    background: #0b1220;
+    color: #e5e7eb;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* pega a cor herdada */
+}
+
+li {
+    list-style: none;
+}
+
+.global {
+    padding: 15px;
+    color: #9ca3af;
+    line-height: 1.6;
+    text-align: justify;
+    overflow: auto; /* Importante: impede que o conteúdo "vaze" para fora da div */
+}
+
+.global h2 {
+    text-align: center;
+    color: #34d399;
+}
+
+.global h3 {
+    text-align: center;
+    color: #34d399;
+}
+
+.textual {
+    flex: 1;                   /* Faz o texto ocupar todo o espaço restante à esquerda */
+    min-width: 300px;          /* Impede que o texto fique muito espremido */
+    margin-top: 15px;
+}
+
+.textual a {
+    color: #dbcd0a;
+}
+
+.imagem {
+    float: right;          /* Joga a div da imagem para a direita */
+    margin-left: 20px;     /* Cria um recuo para o texto não encostar na foto */
+    margin-bottom: 10px;   /* Espaço para o texto que passar por baixo */
+    max-width: 800px;      /* Limita o tamanho horizontal */
+    width: 80%;            /* Define uma largura relativa para ser responsivo */
+    margin-top: 15px;
+}
+
+.imagem img {
+    width: 100%;           /* A imagem interna segue o tamanho da div pai */
+    height: auto;
+    display: block;
+}
+
+/* Ajuste para telas pequenas (Celulares) */
+@media (max-width: 600px) {
+    .imagem {
+        float: none;       /* Remove o float em telas pequenas */
+        margin: 0 auto 20px auto; /* Centraliza a imagem */
+        width: 100%;       /* Ocupa a largura total */
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: #9ca3af;
+}
